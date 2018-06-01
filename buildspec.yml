@@ -17,3 +17,4 @@ phases:
 artifacts:
   files:
     - index.zip 
+    - before_install.sh
