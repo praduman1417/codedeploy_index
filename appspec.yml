@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+permissions:
+  - object: /var/www/html/index.html
+    owner: ec2-user
+    group: ec2-user
+hooks:
+  BeforeInstall:
+    - location: before_install.sh
+      runas: ec2-user
+  AfterInstall:
+    - location: after_install.sh
+      runas: ec2-user
