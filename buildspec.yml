@@ -12,7 +12,6 @@ phases:
       - echo Build started on `date`
   post_build:
     commands:
-      - zip -r index ./
       - echo Build completed on `date`
 artifacts:
   files:
